@@ -172,7 +172,7 @@ mailSubmit.addEventListener("click", ()=>{
     let body = document.getElementById("mail-body");
 
     var mail = document.createElement("a");
-    mail.href = "mailto:aswin18027@cse.ssn.edu.in?subject:"+sub.textContent+"body:"+body.textContent;
+    mail.href = "mailto:aswin18027@cse.ssn.edu.in?subject="+sub.textContent+"body="+body.textContent;
     mail.click();
 })
 // 
