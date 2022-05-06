@@ -162,3 +162,17 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// mail
+
+let mailSubmit = document.getElementById("mail-submit")
+mailSubmit.addEventListener("click", ()=>{
+    // alert("clicked")
+    let sub = document.getElementById("mail-subject");
+    let body = document.getElementById("mail-body");
+
+    var mail = document.createElement("a");
+    mail.href = "mailto:aswin18027@cse.ssn.edu.in?subject:"+sub.textContent+"body:"+body.textContent;
+    mail.click();
+})
+// 
